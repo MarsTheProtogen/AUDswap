@@ -22,7 +22,7 @@ It also  works on other odd formats like OGG, PCM ect.
 # why?
 Ever need to convert a file online but had that small voice in your head saying "what if they copy or see my file?" 
 that is what this program if for, deeply mistrusting people. 
-If for whatever reason you don't trust the GUI code, there is a minimalistic termanal based version 
+If for whatever reason you don't trust the GUI code, there is a minimalistic terminal based version 
 <br>
 _it's also a repurpose for the backend of another project_
 
