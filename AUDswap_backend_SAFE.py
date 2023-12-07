@@ -49,10 +49,10 @@ def convert(src):
 
 	#pydub conversion <to_format>
 	raw_audio = AudioSegment.from_file(src, format=from_format)
-	raw_audio.export("C:\\Users\\74lch\\Desktop\\programs\\M1.wav", format=to_format)
+	raw_audio.export("\\M1.wav", format=to_format)
 
 
 start = timer()
-convert("C:\\Users\\74lch\\Desktop\\programs\\M1.mp4")
+convert("\\M1.mp4")
 end = timer()
 print ("required run time is " + str(end - start))
