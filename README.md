@@ -16,7 +16,7 @@ It also  works on other odd formats like OGG, PCM ect.
 * AIFF
 * ASF
 * FLV
-* MPEGTS
+* MPEG4
 
 <br> <br>
 # why?
