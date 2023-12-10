@@ -9,6 +9,17 @@ def convert(src, dst, to_format):
 	supported_extensions = "mp3, aac, pcm, ogg, flac, wav, aiff, dsd, pcm, avi, flv, mkv, mov, webm, avchd, mp4, wmv, mpeg4"
 
 
+	#check if the file exists
+	try:
+		f = open("filename.txt")
+	#if not found
+	except FileNotFoundError:
+		return "file not found"
+
+	#continue if file is found
+	else:
+		pass
+
 	#exit if there is more than one or no extension
 	if len(src.split(".")) !=2:
 		return "Error, file name must only have one extension"
@@ -52,3 +63,4 @@ def convert(src, dst, to_format):
 
 	#pydub export to <dst>
 	raw_audio.export(dst, format=to_format)
+	return "file successfully converted "
