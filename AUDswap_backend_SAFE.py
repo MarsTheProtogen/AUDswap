@@ -6,11 +6,8 @@ def convert(src, dst, to_format):
 
 
 	#list of allowed extensions
-<<<<<<< HEAD
 	supported_extensions = "mp3, aac, ogg, flac, wav, aiff, dsd, pcm, avi, flv, mkv, mov, webm, avchd, mp4, wmv, mpeg4"
-=======
-	supported_extensions = "MP3, AAC, OGG, FLAC, WAV, AIFF, DSD, PCM, AVI, FLV, MKV, MOV, WebM, AVCHD, MP4, WMV, MPEG4"
->>>>>>> d7d0b82b0a6fff2d73db569396eb67b4d1a70873
+
 
 	#exit if there is more than one or no extension
 	if len(src.split(".")) !=2:
