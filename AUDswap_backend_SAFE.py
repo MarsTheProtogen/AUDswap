@@ -1,16 +1,19 @@
-from timeit import default_timer as timer
 from pydub import AudioSegment
 
-
+#for aplications that are delay sensitive, the conversion appears to have a base rin time of ~.15s + 0.005405405405*<seconds of audio>
 
 def convert(src, dst, to_format):
 
 
 	#list of allowed extensions
+<<<<<<< HEAD
+	supported_extensions = "mp3, aac, ogg, flac, wav, aiff, dsd, pcm, avi, flv, mkv, mov, webm, avchd, mp4, wmv, mpeg4"
+=======
 	supported_extensions = "MP3, AAC, OGG, FLAC, WAV, AIFF, DSD, PCM, AVI, FLV, MKV, MOV, WebM, AVCHD, MP4, WMV, MPEG4"
+>>>>>>> d7d0b82b0a6fff2d73db569396eb67b4d1a70873
 
 	#exit if there is more than one or no extension
-	if len(src.spit(".")) !=2:
+	if len(src.split(".")) !=2:
 		return "Error, file name must only have one extension"
 
 
@@ -18,10 +21,6 @@ def convert(src, dst, to_format):
 	filename, from_format=src.split('.')
 
 
-
-	#check if file type is convertable
-	
-	
 	n=supported_extensions.split(', ')
 	i=1
 
@@ -48,7 +47,7 @@ def convert(src, dst, to_format):
 
 		if from_format == str:
 			#if file extension is a match, exit loop and continue the program
-			continue
+			break
 
 
 	#pydub conversion <to_format>
@@ -56,12 +55,3 @@ def convert(src, dst, to_format):
 
 	#pydub export to <dst>
 	raw_audio.export(dst, format=to_format)
-
-
-
-src = "transcript.mp3"
-dst = "test.wav"
-start = timer()
-convert(src, dst, 'wav')
-end = timer()
-print ("required run time is " + str(end - start))
