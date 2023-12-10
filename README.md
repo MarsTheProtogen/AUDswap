@@ -10,6 +10,7 @@ It also  works on other odd formats like OGG, PCM ect.
 * OGG
 * MKV
 * GIF
+* PCM
 * AVI
 * AAC
 * AC3
