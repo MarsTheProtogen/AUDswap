@@ -31,6 +31,7 @@ _it's also a repurpose for the backend of another project_
 ## prerequisites 
 requires: 
 * ffmpeg
+* audioop [pip install audioop-lts]
 * pydub
 * pyqt6 (for the front end/ GUI)
 
