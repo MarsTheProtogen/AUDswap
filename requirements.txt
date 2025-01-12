@@ -1,0 +1,4 @@
+audioop-lts==0.2.1
+pip==24.3.1
+pydub==0.25.1
+pyee==12.1.1
